@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: black;
+  background-color: white;
+}
+
+
+main {
+  font-family: 'Montserrat', sans-serif;
+
+}
+.container{
+  display: flex;
+  align-items: center;
+  height:100vh;
+  justify-content: center;
+  margin:5%;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+hr{
+  width:100%;
+}
+.basic-card{
+  width:17rem;
+ height:30rem;
+ color:black;
+ background-color:white;
+ border-radius: 15px;
+ font-size: 15px;
+ padding:5%;
+
+}
+.pro-card{
+  width:17rem;
+ height:33rem;
+ background: linear-gradient(90deg, hsl(236, 72%, 79%)0%, hsl(237, 63%, 64%));
+ border-radius: 15px;
+ color:white;
+ font-size: 15px;
+ padding:5%;
+
+
+}
+.master-card{
+  width:17rem;
+ height:30rem;
+ color:black;
+ background-color:white;
+ border-radius: 15px;
+ font-size: 15px;
+ padding:5%;
+
+
+}
+.learn-button{
+  width:100%;
+  border-radius: 5px;
+  height:40px;
+  border:none;
+  color:white;
+  background: linear-gradient(90deg, hsl(236, 72%, 79%)0%, hsl(237, 63%, 64%));
+}
+
+.pro-button{
+  width:100%;
+  border-radius: 5px;
+  background-color: white;
+  height:40px;
+  border:none;
+  color:hsl(237, 63%, 64%);
+}
+
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  font-size: 1rem;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: hsl(223, 50%, 87%);
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+  content: "";
+}
+
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+  background: hsl(237, 63%, 64%);
+}
+
+.toggle-checkbox:checked+.toggle-switch:before {
+  left: 30px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin: 15px;
+  position: relative;
+  top: 2px;
+  font-size: .8rem;
+  color: hsl(225, 20%, 60%);
+}
