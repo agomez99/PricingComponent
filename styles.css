@@ -1,103 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  color: black;
-  background-color: white;
+  background-image: url(./images/bg-bottom.svg), url(./images/bg-top.svg);
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-color: hsl(240, 78%, 98%);
+
 }
-
-
 main {
   font-family: 'Montserrat', sans-serif;
+  height: 100vh;
 
 }
-.container{
-  display: flex;
-  align-items: center;
-  height:100vh;
-  justify-content: center;
-  margin:5%;
+
+.container {
   font-weight: bold;
   font-size: 15px;
-
 }
+
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
-hr{
-  width:100%;
+
+.header-section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: hsl(232, 13%, 33%);
 }
-.basic-card{
-  width:17rem;
- height:30rem;
- color:black;
- background-color:white;
- border-radius: 15px;
- font-size: 15px;
- padding:5%;
+
+.header {
+  font-size: 1.3rem;
+}
+
+.sub-header {
+  font-size: 1.2rem;
+}
+
+.price {
+  font-size: 70px;
+}
+
+hr {
+  width: 100%;
+}
+
+.basic-card, .master-card {
+  width: 23rem;
+  height: 30rem;
+  color: hsl(232, 13%, 33%);
+  background-color: white;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 5%;
+  box-shadow: 0px 0px 14px -1px hsl(237, 48%, 83%);
 
 }
-.pro-card{
-  width:17rem;
- height:33rem;
- background: linear-gradient(90deg, hsl(236, 72%, 79%)0%, hsl(237, 63%, 64%));
- border-radius: 15px;
- color:white;
- font-size: 15px;
- padding:5%;
+
+.pro-card {
+  width: 23rem;
+  height: 32rem;
+  background: linear-gradient(90deg, hsl(236, 72%, 79%)0%, hsl(237, 63%, 64%));
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+  padding: 10% 5% 10% 5%;
+  position: relative;
+  top: -20px;
+  box-shadow: 0px 7px 14px -5px hsl(237, 48%, 83%);
 
 
 }
-.master-card{
-  width:17rem;
- height:30rem;
- color:black;
- background-color:white;
- border-radius: 15px;
- font-size: 15px;
- padding:5%;
 
 
-}
-.learn-button{
-  width:100%;
+.learn-button {
+  width: 100%;
   border-radius: 5px;
-  height:40px;
-  border:none;
-  color:white;
+  height: 50px;
+  border: none;
+  color: white;
   background: linear-gradient(90deg, hsl(236, 72%, 79%)0%, hsl(237, 63%, 64%));
 }
 
-.pro-button{
-  width:100%;
-  border-radius: 5px;
-  background-color: white;
-  height:40px;
-  border:none;
-  color:hsl(237, 63%, 64%);
+.learn-button:hover {
+  color: hsl(237, 63%, 64%);
+  background: white;
+  border: 1px solid hsl(237, 63%, 64%);
+  box-shadow: 0px 0px 14px -1px hsl(237, 48%, 83%);
+
+}
+.learn-button:active{
+  box-shadow: none;
+  transform: translateY(4px);
 }
 
+.pro-button {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  height: 50px;
+  border: none;
+  color: hsl(237, 63%, 64%);
+}
 
+.pro-button:hover {
+  color: white;
+  background: linear-gradient(90deg, hsl(236, 72%, 79%)0%, hsl(237, 63%, 64%));
+  border: 1px solid white;
+  box-shadow: 0px 0px 14px -1px hsl(237, 48%, 83%);
+
+}
+.pro-button:active {
+  box-shadow: none;
+  transform: translateY(4px);
+  
+  }
+  
 .toggle {
   cursor: pointer;
-  display: inline-block;
+  display: block;
   height: 10px;
   font-size: 1rem;
 }
 
 .toggle-switch {
   display: inline-block;
-  background: hsl(223, 50%, 87%);
+  background: hsl(237, 63%, 64%);
   border-radius: 16px;
   width: 58px;
   height: 32px;
   position: relative;
   vertical-align: middle;
   transition: background 0.25s;
+}
+
+.toggle-switch:hover {
+  opacity: 0.5;
+
 }
 
 .toggle-switch:before,
@@ -140,6 +183,35 @@ hr{
   margin: 15px;
   position: relative;
   top: 2px;
-  font-size: .8rem;
-  color: hsl(225, 20%, 60%);
+  font-size: .9rem;
+  color: hsl(234, 14%, 74%);
+}
+@media screen and (max-width: 600px) {
+
+  body {
+    background-image:  url(./images/bg-top.svg);
+    background-position:   top -20px right -190px
+  
+  }
+main {
+  height:100%;
+}
+.header-section {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: hsl(232, 13%, 33%);
+}
+  .basic-card, .master-card {
+    width:auto;
+    margin:5%;
+  }
+  
+  .pro-card {
+    width: auto;
+    margin:5%;
+
+  
+  
+  }
+  
 }
