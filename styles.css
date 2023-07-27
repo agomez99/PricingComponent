@@ -1,217 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
+html,
 body {
-  background-image: url(./images/bg-bottom.svg), url(./images/bg-top.svg);
-  background-position: left bottom, right top;
-  background-repeat: no-repeat, no-repeat;
-  background-color: hsl(233, 13%, 49%);
-
-}
-main {
-  font-family: 'Montserrat', sans-serif;
-  height: 100vh;
-
+  background-color: hsl(218, 23%, 16%);
+  height: 100%;
 }
 
-.container {
-  font-weight: bold;
-  font-size: 15px;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.header-section {
-  padding-top: 5%;
-  padding-bottom: 8%;
-  color: hsl(232, 13%, 33%);
-}
-
-.header {
-  font-size: 1.3rem;
-}
-
-.sub-header {
-  font-size: 1.2rem;
-}
-
-.price {
-  font-size: 70px;
-}
-
-hr {
-  width: 100%;
-}
-
-.basic-card, .master-card {
-  width: 23rem;
-  height: 30rem;
-  color: hsl(232, 13%, 33%);
-  background-color: white;
-  border-radius: 15px;
-  font-size: 15px;
-  padding: 5%;
-  box-shadow: 0px 0px 14px -1px hsl(237, 48%, 83%);
-
-}
-
-.pro-card {
-  width: 23rem;
-  height: 32rem;
-  background: linear-gradient(90deg, hsl(236, 72%, 79%)0%, hsl(237, 63%, 64%));
-  border-radius: 15px;
-  color: white;
-  font-size: 15px;
-  padding: 10% 5% 10% 5%;
+#container {
+  height: 100px;
   position: relative;
-  top: -20px;
-  box-shadow: 0px 7px 14px -5px hsl(237, 48%, 83%);
-
-
 }
 
+.card-body {
+  margin-top: 5%;
+  padding: 0;
+  margin-bottom: 5%;
+}
 
-.learn-button {
-  width: 100%;
-  border-radius: 5px;
-  height: 50px;
+.dice-btn {
+  background-color: hsl(150, 100%, 66%);
   border: none;
-  color: white;
-  background: linear-gradient(90deg, hsl(236, 72%, 79%)0%, hsl(237, 63%, 64%));
-}
-
-.learn-button:hover {
-  color: hsl(237, 63%, 64%);
-  background: white;
-  border: 1px solid hsl(237, 63%, 64%);
-  box-shadow: 0px 0px 14px -1px hsl(237, 48%, 83%);
-
-}
-.learn-button:active{
-  box-shadow: none;
-  transform: translateY(4px);
-}
-
-.pro-button {
-  width: 100%;
-  border-radius: 5px;
-  background-color: white;
-  height: 50px;
-  border: none;
-  color: hsl(237, 63%, 64%);
-}
-
-.pro-button:hover {
-  color: white;
-  background: linear-gradient(90deg, hsl(236, 72%, 79%)0%, hsl(237, 63%, 64%));
-  border: 1px solid white;
-  box-shadow: 0px 0px 14px -1px hsl(237, 48%, 83%);
-
-}
-.pro-button:active {
-  box-shadow: none;
-  transform: translateY(4px);
-  
-  }
-  
-.toggle {
-  cursor: pointer;
-  display: block;
-  height: 10px;
-  font-size: 1rem;
-}
-
-.toggle-switch {
-  display: inline-block;
-  background: hsl(237, 63%, 64%);
-  border-radius: 16px;
-  width: 58px;
-  height: 32px;
-  position: relative;
-  vertical-align: middle;
-  transition: background 0.25s;
-}
-
-.toggle-switch:hover {
-  opacity: 0.5;
-
-}
-
-.toggle-switch:before,
-.toggle-switch:after {
-  content: "";
-}
-
-.toggle-switch:before {
-  display: block;
-  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
   border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  transition: left 0.25s;
+  height: 65px;
+  width: 65px;
 }
 
-.toggle:hover .toggle-switch:before {
-  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+.dice-btn:hover {
+  box-shadow: 0px 0px 18px 8px hsl(150, 100%, 66%);
 }
 
-.toggle-checkbox:checked+.toggle-switch {
-  background: hsl(237, 63%, 64%);
+.dice-img {
+  height: 30px;
+  width: 30px;
 }
 
-.toggle-checkbox:checked+.toggle-switch:before {
-  left: 30px;
+.divider-div {
+  padding: 0 2.5rem;
+  width: 100%;
 }
 
-.toggle-checkbox {
-  position: absolute;
-  visibility: hidden;
+.main-card {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 20px;
+  margin-top: 15%;
+  width: 35rem;
 }
 
-.toggle-label {
-  margin: 15px;
+.mobile-divider {
+  color: white;
+  display: none;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+#btn {
+  left: 0;
   position: relative;
-  top: 2px;
-  font-size: .9rem;
-  color: hsl(234, 14%, 74%);
+  top: 30px;
 }
+
+.title-text {
+  color: hsl(150, 100%, 66%);
+  font-family: 'Manrope', sans-serif;
+  font-size: smaller;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.body-text {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (max-width: 600px) {
+  .body-text {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .mobile-divider {
+    display: flex;
+  }
+  .card-body {
+    padding: 0;
+  }
 
-  body {
-    background-image:  url(./images/bg-top.svg);
-    background-position:   top -20px right -190px
-  
+  .divider-div {
+    display: none;
   }
-main {
-  height:100%;
-}
-.header-section {
-  padding-top: 20%;
-  padding-bottom: 20%;
-  color: hsl(232, 13%, 33%);
-}
-  .basic-card, .master-card {
-    width:auto;
-    margin:5%;
-  }
-  
-  .pro-card {
-    width: auto;
-    margin:5%;
 
-  
-  
+  .main-card {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 20px;
+    margin-top: 80%;
+    width: 35rem;
+    height:100%;
   }
-  
+
+
 }
